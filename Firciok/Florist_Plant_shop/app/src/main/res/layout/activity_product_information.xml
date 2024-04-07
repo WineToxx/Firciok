@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_Information"
+    android:background="@color/white"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/item_bg"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom"/>
+
+            <ImageView
+                android:id="@+id/detailed_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bouquet"
+                android:layout_gravity="bottom"/>
+
+            <ImageView
+                android:id="@+id/back_home_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back_arrow"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <ImageView
+                android:id="@+id/detailed_rate_img"
+                android:layout_width="94dp"
+                android:layout_height="40dp"
+                android:src="@drawable/four_star_rating"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/detailed_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/detailed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Areca Palm"
+                android:textSize="27sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#2C3532"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="AED"
+                    android:gravity="left"
+                    android:layout_gravity="right"
+                    android:textSize="27dp"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+
+                <TextView
+                    android:id="@+id/detailed_price"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_gravity="right"
+                    android:gravity="left"
+                    android:textSize="27sp"
+                    android:paddingTop="3dp"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/sunlight_symbol"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUNLIGHT"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="#66776A" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/temperature_symbol"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="TEMPERATURE"
+                    android:textColor="#66776A"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/water_plant_symbol"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="WATER"
+                    android:textColor="#66776A"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detailed_maintenance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:justificationMode="inter_word"
+            android:text="@string/OB_Title_Desc"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="17dp"
+            android:text="Description"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/detailed_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:justificationMode="inter_word"
+            android:text="@string/OB_Title_Desc"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4">
+
+                <ImageView
+                    android:id="@+id/add_item"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/add_to_cart_plus"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="30sp"
+                    android:textColor="#66776A"/>
+
+                <ImageView
+                    android:id="@+id/remove_item"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/remove_from_cart_minus"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/add_to_cart_button"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:elevation="10dp"
+                    android:text="Add to Cart"
+                    android:layout_marginLeft="60dp"
+                    android:paddingHorizontal="40dp"
+                    android:backgroundTint="#CFCCC5"
+                    android:fontFamily="sans-serif-condensed-medium" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

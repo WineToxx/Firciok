@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "657334798389",
+    "project_id": "florist--plant--shop",
+    "storage_bucket": "florist--plant--shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657334798389:android:e2dd7bd84a7262a1a1c97c",
+        "android_client_info": {
+          "package_name": "com.example.florist_plant_shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDky6cgg_fahNsZzqRfkBnCJkPHVgmfP8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

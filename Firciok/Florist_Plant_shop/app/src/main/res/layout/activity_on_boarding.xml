@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding"
+    android:background="@drawable/onboarding_wallpaper"
+    android:backgroundTint="#738C8E"
+    android:orientation="vertical"
+    android:paddingTop="100dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginBottom="25dp"
+        android:elevation="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#2C3532"
+        android:textSize="20sp"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:text="@string/OB_Title_Desc"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingHorizontal="30sp"
+        android:textColor="#2C3532"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/NextCard"
+            android:layout_width="60dp"
+            android:layout_height="61dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="36dp"
+            android:backgroundTint="#DDDDDD"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            tools:ignore="DuplicateClickableBoundsCheck">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/OB_Title_Desc"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:src="@drawable/next_arrow"
+                app:tint="#738C8E" />
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
